@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Самой Любимой ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="nav">
+        <button id="musicToggle" class="music-btn">🔊</button>
+    </div>
+
+    <!-- Главный экран -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Для Тебя, Моя Любовь 💖</h1>
+            <p>Этот сайт — моё признание тебе...</p>
+            <button id="openLetter" class="btn pulse">Открыть письмо 💌</button>
+        </div>
+        <div class="hearts"></div>
+    </section>
+
+    <!-- Письмо -->
+    <section id="letter" class="hidden">
+        <div class="romantic-letter">
+            <div class="letter-content">
+                <h2>Моей Самой Дорогой</h2>
+                <div class="letter-text">
+                    <p>Каждый миг с тобой — это счастье. Ты вдохновляешь меня, поддерживаешь и наполняешь мою жизнь светом...</p>
+                    <p>Я бесконечно благодарен судьбе за тебя. Люблю тебя больше всех на свете!</p>
+                </div>
+                <button class="btn" id="nextPage">Дальше ➡️</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="hidden">
+        <h2>Моя красавица 📸</h2>
+        <div class="gallery">
+            <!-- ЗАМЕНИТЕ НА ВАШИ ФОТО -->
+            <img src="1.png" alt="Наше фото 1" class="photo">
+            <img src="2.png" alt="Наше фото 2" class="photo">
+            <img src="7.png" alt="Наше фото 3" class="photo">
+            <img src="4.png" alt="Наше фото 4" class="photo">
+            <img src="5.png" alt="Наше фото 5" class="photo">
+            <img src="6.png" alt="Наше фото 6" class="photo">
+        </div>
+        <button class="btn" id="toTimer">Наш счётчик ❤️</button>
+    </section>
+
+    <!-- Таймер отношений -->
+    <section id="timer" class="hidden">
+        <h2>Мы вместе уже:</h2>
+        <div class="timer">
+            <span id="days">0</span> дней, 
+            <span id="hours">0</span> часов, 
+            <span id="minutes">0</span> минут!🤣
+        </div>
+        <p>И с каждым днём я люблю тебя всё сильнее...</p>
+        <button class="btn" id="toCompliments">Ты самая... 🌟</button>
+    </section>
+
+    <!-- Генератор комплиментов -->
+    <section id="compliments" class="hidden">
+        <h2>Ты Самая...</h2>
+        <div class="compliment-box">
+            <p id="complimentText">Нажми на кнопку, чтобы узнать, какая ты сегодня!</p>
+            <button class="btn" id="generateCompliment">Новый комплимент 💫</button>
+        </div>
+        <button class="btn" id="toLoveMessage">Признание 💌</button>
+    </section>
+
+    <!-- Блок "ЛЮБЛЮ ТЕБЯ" -->
+    <section id="interactiveLove" class="hidden">
+        <h2>Наведи курсор на текст 👇</h2>
+        <div class="love-message">
+            ЛЮБЛЮ ТЕБЯ
+            <div class="hearts-container"></div>
+        </div>
+        <button class="btn" id="toSecret">Секретное послание ✨</button>
+    </section>
+
+    <!-- Секретное послание -->
+    <section id="secretMessage" class="hidden">
+        <h2>Для Тебя...</h2>
+        <div class="secret-message">
+            <p class="reveal">Ты — самое дорогое, что у меня есть.</p>
+            <p class="reveal">Я хочу быть с тобой всю жизнь.</p>
+            <p class="reveal">Спасибо, что ты есть! 💞</p>
+        </div>
+        <button class="btn" id="toHome">В начало 🏠</button>
+    </section>
+
+    <!-- Аудио -->
+    <audio id="bgMusic" loop>
+        <source src="romantic.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+   <script src="script.js"></script>
+</body>
+</html>
